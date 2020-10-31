@@ -10,7 +10,7 @@
 <g>
 	<g>
 		<defs>
-			<rect id="SVGID_1_" x="-101" y="-100" width="1460" height="400"/>
+			<rect id="SVGID_1_" x="-101" y="-100" />
 		</defs>
 		<clipPath id="SVGID_2_">
 			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
