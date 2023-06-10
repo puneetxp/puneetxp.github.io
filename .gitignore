@@ -4,6 +4,7 @@ dist/
 
 # dependencies
 node_modules/
+screenshots
 
 # logs
 npm-debug.log*

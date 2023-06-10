@@ -1,30 +1,46 @@
 ---
 export interface Props {
-	path: string;
+  path: string;
 }
 import { website } from "../../scripts/website.js";
-import {getFilenameAndExtension} from "../Js/myfunc.js";
+import { getFilenameAndExtension } from "../Js/myfunc.js";
+import Card from "./Card.astro";
+const live = website.live;
 const { path } = Astro.props;
-const images = await Astro.glob("/screenshots/live/*").then(files => {
-  return files.map(file => file.default);
+const images = await Astro.glob("/screenshots/live/*").then((files) => {
+  return files.map((file) => file.default);
 });
 ---
 
 <div class="my-5 bg-white rounded-md">
-	<h2 class="text-4xl font-bold text-center py-5">
-		Website Live Project
-	</h2>
-	<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 my-4">
-		{
-			images.map(image =>(
-				<a class="grid where shadow hover:bg-indigo-100 hover:shadow-lg hover:rounded transition duration-150 ease-in-out transform hover:scale-105 p-3">
-					<img 
-					src={image.src}
-					class="w-full h-full" 
-					/>
-					<div class="text-xl font-bold text-center py-2">{getFilenameAndExtension(image.src)}</div>
-				</div>
-			))
-		}
-	</div>	
+  <h2 class="text-4xl font-bold text-center py-5">Website Live Project</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 my-4">
+    {
+      images.map((image) => (
+        <Card
+          target="_black"
+          href={
+            "//" +
+              live.find((i) =>
+                getFilenameAndExtension(image.src).startsWith(i.website)
+              )!.website || ""
+          }
+        >
+          <img src={image.src} class="w-full h-full" />
+          <div class="text-xl font-bold text-center py-2">
+            {getFilenameAndExtension(image.src)}
+          </div>
+        </Card>
+      ))
+    }
+  </div>
 </div>
+
+<style>
+  a.link-card:is(:hover, :focus-within) {
+    background-position: 0;
+  }
+  a.link-card:is(:hover, :focus-within) h2 {
+    color: rgb(var(--accent));
+  }
+</style>
