@@ -2,8 +2,9 @@
 export interface Props {
 	path: string;
 }
-const { path } = Astro.props;
+import { website } from "../../scripts/website.js";
 import {getFilenameAndExtension} from "../Js/myfunc.js";
+const { path } = Astro.props;
 const images = await Astro.glob("/screenshots/live/*").then(files => {
   return files.map(file => file.default);
 });
