@@ -1,0 +1,29 @@
+---
+export interface Props {
+	path: string;
+}
+const { path } = Astro.props;
+import {getFilenameAndExtension} from "../Js/myfunc.js";
+const images = await Astro.glob("/screenshots/live/*").then(files => {
+  return files.map(file => file.default);
+});
+---
+
+<div class="my-5 bg-white rounded-md">
+	<h2 class="text-4xl font-bold text-center py-5">
+		Website Live Project
+	</h2>
+	<div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 my-4">
+		{
+			images.map(image =>(
+				<div class="grid">
+					<img 
+					src={image.src}
+					class="w-full h-full hover:border-2 hover:border-solid shadow-xl m-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105" 
+					/>
+					<div class="text-xl font-bold text-center py-2">{getFilenameAndExtension(image.src)}</div>
+				</div>
+			))
+		}
+	</div>	
+</div>
