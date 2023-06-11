@@ -1,6 +1,6 @@
 ---
 import Card from "./Cardnolink.astro";
-const { id, open, label } = Astro.props;
+const { id, open } = Astro.props;
 ---
 
 <style lang="scss">
@@ -21,7 +21,7 @@ const { id, open, label } = Astro.props;
 </style>
 
 <button onclick={`window.${id}.showModal()`}>
-  <Card title={label} />
+  <Card title={open} />
 </button>
 
 <dialog id="{id}">

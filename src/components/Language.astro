@@ -1,12 +1,11 @@
 ---
-import wordpress from "../assets/svg/press.svg";
-import coding from "../assets/svg/coding.svg";
 import js from "../assets/svg/js.svg";
 import html5 from "../assets/svg/html5.svg";
 import css from "../assets/svg/css.svg";
 import php from "../assets/svg/php1.svg";
 import mysql from "../assets/svg/mysql.svg";
-import jquery from "../assets/svg/jquery.svg";
+import dart from "../assets/svg/dart.svg";
+import sass from "../assets/svg/sass.svg";
 import apache from "../assets/svg/apache.svg";
 import vuejs from "../assets/svg/vuejs.svg";
 import deno from "../assets/svg/deno.svg";
@@ -23,6 +22,8 @@ const setof = {
     { name: "css", src: css },
     { name: "c#", src: csharp },
     { name: "mysql", src: mysql },
+    { name: "sass", src: sass },
+    { name: "dart", src: dart },
   ],
   frameworks: [
     { name: "laravel", src: "https://laravel.com/img/logomark.min.svg" },
@@ -51,7 +52,7 @@ const setof = {
 
 {
   Object.entries(setof).map(([key, item]) => (
-    <section>
+    <section class="bg-white py-4 my-4">
       <h2 class="text-3xl font-bold uppercase text-center my-5">{key}</h2>
       <div class="skill flex flex-wrap justify-center gap-2">
         {item.map((element) => (

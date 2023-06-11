@@ -5,7 +5,7 @@ export interface Props {
 import { website } from "../../scripts/website.js";
 import { getFilenameAndExtension } from "../Js/myfunc.js";
 import Card from "./Card.astro";
-const live = website.live;
+import Detail from "./Detail.astro";
 const { path } = Astro.props;
 const imagesprod = await Astro.glob("/screenshots/live/*").then((files) => {
   return files.map((file) => file.default);
@@ -13,40 +13,48 @@ const imagesprod = await Astro.glob("/screenshots/live/*").then((files) => {
 const imagesdev = await Astro.glob("/screenshots/dev/*").then((files) => {
   return files.map((file) => file.default);
 });
-const imagespartial = await Astro.glob("/screenshots/partial/*").then((files) => {
-  return files.map((file) => file.default);
-});
+const imagespartial = await Astro.glob("/screenshots/partial/*").then(
+  (files) => {
+    return files.map((file) => file.default);
+  }
+);
 ---
 
-<div class="bg-slate-100 shadow my-4">
-  <div class="text-3xl text-center font-bold p-3">
-    WEB PROJECT 
-  </div>
+<div
+  class="bg-white border-purple-600/20 transition-all hover:border-purple-600/40 rounded border-solid border-2 shadow my-4"
+>
+  <div class="text-3xl text-center font-bold p-3">WEB PROJECT</div>
   <div class="text-4xl text-center font-black p-2 text-indigo-900/80">
     100% Me
   </div>
   {
     [
-      { title: "PRODUCTION", type: imagesprod },
-      { title: "WORK IN PROGRESS", type: imagesdev },
-      { title: "PARTIAL WORK NOT 100% ME", type: imagespartial },
+      { title: "PRODUCTION", type: imagesprod, website: website.live },
+      { title: "WORK IN PROGRESS", type: imagesdev, website: website.dev },
+      {
+        title: "PARTIAL WORK NOT 100% ME",
+        type: imagespartial,
+        website: website.partial,
+      },
     ].map((type) => (
-      <div class="my-5 rounded-md">
-        <h2 class="text-3xl font-bold text-center py-5">{type.title}</h2>
+      <div>
+        <div class="text-2xl font-bold text-center">{type.title}</div>
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 my-4">
           {type.type.map((image) => (
             <Card
               target="_black"
               href={
                 "//" +
-                  live.find((i) =>
+                  type.website.find((i) =>
                     getFilenameAndExtension(image.src).startsWith(i.website)
                   )?.website || ""
               }
             >
               <img src={image.src} class="w-full h-full" />
-              <div class="text-xl font-bold text-center py-2">
-                {getFilenameAndExtension(image.src)}
+              <div class="text-xl font-bold text-center py-2 uppercase">
+                {type.website.find((i) =>
+                  getFilenameAndExtension(image.src).startsWith(i.website)
+                )?.label || ""}
               </div>
             </Card>
           ))}
@@ -55,11 +63,56 @@ const imagespartial = await Astro.glob("/screenshots/partial/*").then((files) =>
     ))
   }
 </div>
-<style>
+<style lang="scss">
   a.link-card:is(:hover, :focus-within) {
     background-position: 0;
   }
   a.link-card:is(:hover, :focus-within) h2 {
     color: rgb(var(--accent));
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary ~ * {
+    animation: ease-opacity-t-b 0.5s ease;
+  }
+
+  details {
+    user-select: none;
+    & summary svg {
+      transform: rotate(90deg);
+    }
+  }
+  details[open] {
+    & summary svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  details[open] summary ~ * {
+    animation: ease-opacity-t-b 0.5s ease;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+  svg {
+    transition: all 0.3s;
+  }
+
+  /* TO JE TO - TO JE TAJ */
+
+  summary {
+    list-style: none; // Remove arrow
+    &::-webkit-details-marker {
+      display: none; // Remove arrow
+    }
+    &:hover {
+      background-color: #f2f5f9;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 </style>
