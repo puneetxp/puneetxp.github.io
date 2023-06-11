@@ -7,35 +7,54 @@ import { getFilenameAndExtension } from "../Js/myfunc.js";
 import Card from "./Card.astro";
 const live = website.live;
 const { path } = Astro.props;
-const images = await Astro.glob("/screenshots/live/*").then((files) => {
+const imagesprod = await Astro.glob("/screenshots/live/*").then((files) => {
+  return files.map((file) => file.default);
+});
+const imagesdev = await Astro.glob("/screenshots/dev/*").then((files) => {
+  return files.map((file) => file.default);
+});
+const imagespartial = await Astro.glob("/screenshots/partial/*").then((files) => {
   return files.map((file) => file.default);
 });
 ---
 
-<div class="my-5 bg-white rounded-md">
-  <h2 class="text-4xl font-bold text-center py-5">Website Live Project</h2>
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 my-4">
-    {
-      images.map((image) => (
-        <Card
-          target="_black"
-          href={
-            "//" +
-              live.find((i) =>
-                getFilenameAndExtension(image.src).startsWith(i.website)
-              )!.website || ""
-          }
-        >
-          <img src={image.src} class="w-full h-full" />
-          <div class="text-xl font-bold text-center py-2">
-            {getFilenameAndExtension(image.src)}
-          </div>
-        </Card>
-      ))
-    }
+<div class="bg-slate-100 shadow my-4">
+  <div class="text-3xl text-center font-bold p-3">
+    WEB PROJECT 
   </div>
+  <div class="text-4xl text-center font-black p-2 text-indigo-900/80">
+    100% Me
+  </div>
+  {
+    [
+      { title: "PRODUCTION", type: imagesprod },
+      { title: "WORK IN PROGRESS", type: imagesdev },
+      { title: "PARTIAL WORK NOT 100% ME", type: imagespartial },
+    ].map((type) => (
+      <div class="my-5 rounded-md">
+        <h2 class="text-3xl font-bold text-center py-5">{type.title}</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 py-4 my-4">
+          {type.type.map((image) => (
+            <Card
+              target="_black"
+              href={
+                "//" +
+                  live.find((i) =>
+                    getFilenameAndExtension(image.src).startsWith(i.website)
+                  )?.website || ""
+              }
+            >
+              <img src={image.src} class="w-full h-full" />
+              <div class="text-xl font-bold text-center py-2">
+                {getFilenameAndExtension(image.src)}
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    ))
+  }
 </div>
-
 <style>
   a.link-card:is(:hover, :focus-within) {
     background-position: 0;

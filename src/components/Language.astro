@@ -1,0 +1,76 @@
+---
+import wordpress from "../assets/svg/press.svg";
+import coding from "../assets/svg/coding.svg";
+import js from "../assets/svg/js.svg";
+import html5 from "../assets/svg/html5.svg";
+import css from "../assets/svg/css.svg";
+import php from "../assets/svg/php1.svg";
+import mysql from "../assets/svg/mysql.svg";
+import jquery from "../assets/svg/jquery.svg";
+import apache from "../assets/svg/apache.svg";
+import vuejs from "../assets/svg/vuejs.svg";
+import deno from "../assets/svg/deno.svg";
+import python from "../assets/svg/python.svg";
+import csharp from "../assets/svg/csharp.svg";
+import alpine from "../assets/svg/alpinejs.svg";
+import nginx from "../assets/svg/nginx.svg";
+const setof = {
+  language: [
+    { name: "python", src: python },
+    { name: "php", src: php },
+    { name: "javascript", src: js },
+    { name: "html", src: html5 },
+    { name: "css", src: css },
+    { name: "c#", src: csharp },
+    { name: "mysql", src: mysql },
+  ],
+  frameworks: [
+    { name: "laravel", src: "https://laravel.com/img/logomark.min.svg" },
+    { name: "vuejs", src: vuejs },
+    {
+      name: "angular",
+      src: "https://angular.io/assets/images/logos/angular/angular.svg",
+    },
+    {
+      name: "solidjs",
+      src: "https://www.solidjs.com/assets/logo-123b04bc.svg",
+    },
+    { name: "deno", src: deno },
+    { name: "alpinejs", src: alpine },
+  ],
+  software: [
+    { name: "nginx", src: nginx },
+    { name: "apache", src: apache },
+    {
+      name: "hmail",
+      src: "https://www.hmailserver.com/images/top_picture.png",
+    },
+  ],
+};
+---
+
+{
+  Object.entries(setof).map(([key, item]) => (
+    <section>
+      <h2 class="text-3xl font-bold uppercase text-center my-5">{key}</h2>
+      <div class="skill flex flex-wrap justify-center gap-2">
+        {item.map((element) => (
+          <img src={element.src} alt={element.name} />
+        ))}
+      </div>
+    </section>
+  ))
+}
+<style>
+  .skill > img,
+  .skill > span {
+    height: 80px;
+    margin: auto;
+  }
+  .skill > img:hover,
+  .skill > span:hover {
+    transition: all 200ms ease-out;
+    transform: rotate(15deg);
+    border-radius: 20%;
+  }
+</style>

@@ -5,6 +5,13 @@ export const website = {
         { "label": "eliteonrent", "website": "eliteonrent.com" },
         { "label": "ikrent", "website": "ikrent.com" }],
     "dev": [
-        { "label": "intax", "website": "intax.in" }
+        { "label": "intax", "website": "intax.in" },
+        { "label": "mfdrent", "website": "mfdrent.in" },
+        { "label": "Dev Velladost", "website": "dev.velladost.com" },
+        { "label": "Documentation", "website": "the-doc.pages.dev" },
+    ],
+    "partial": [
+        { "label": "shopinfactory", "website": "shopinfactory.com" },
+        { "label": "surajherbals", "website": "www.surajherbals.com" }
     ]
 };
