@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Web from "../components/Web.astro";
 import Language from "../components/Language.astro";
+import Network from "../components/Network.astro";
 ---
 
 <Layout title="Hello, This is Software Developer.">
@@ -10,14 +11,7 @@ import Language from "../components/Language.astro";
     <h1>
       Hello, This is <span class="text-gradient">PuneetXP</span>
     </h1>
-    <ul role="list" class="link-card-grid">
-      <Card href="#network">
-        <h2>
-          Check My Network
-          <span>&rarr;</span>
-        </h2>
-      </Card>
-    </ul>
+    <Network/>
     <Language />
     <Web path="/screenshots/live/*" />
   </main>
