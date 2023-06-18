@@ -1,0 +1,16 @@
+---
+import Card from "./Cardnolink.astro";
+const { summary } = Astro.props;
+---
+
+<div class="mt-2">
+    <details>
+        <slot name="summery" />
+        <slot />
+    </details>
+</div>
+<style type="scss">
+    details[open] summary svg {
+        transform: rotate(-90deg);
+    }
+</style>

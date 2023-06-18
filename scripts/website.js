@@ -7,8 +7,8 @@ export const website = {
     "dev": [
         { "label": "intax", "website": "intax.in" },
         { "label": "mfdrent", "website": "mfdrent.in" },
-        { "label": "Dev Velladost", "website": "dev.velladost.com" },
-        { "label": "Documentation", "website": "the-doc.pages.dev" },
+        { "label": "Devloper Version Velladost", "website": "dev.velladost.com" },
+        { "label": "The Documentation", "website": "the-doc.pages.dev" },
     ],
     "partial": [
         { "label": "shopinfactory", "website": "shopinfactory.com" },
