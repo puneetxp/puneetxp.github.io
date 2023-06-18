@@ -4,11 +4,15 @@ Object.entries(website).forEach(([key, item]) => {
     item.forEach(async element => {
         const browser = await chromium.launch();
         const page = await browser.newPage();
-        await page.setViewportSize({ width: 1200, height: 900 })
-        await page.goto(`https://${element.website}`);
-        await page.waitForTimeout(15000);
-        await page.screenshot({ path: `screenshots/${key}/${element.website}.jpeg` })
-        await browser.close();
+        try {
+            await page.setViewportSize({ width: 1200, height: 900 })
+            await page.goto(`https://${element.website}`);
+            await page.waitForTimeout(15000);
+            await page.screenshot({ path: `screenshots/${key}/${element.website}.jpeg` })
+            await browser.close();
+        } catch (err) {
+            console.error(err.message);
+        }
     })
 })
 // website.dev.forEach(async element => {
