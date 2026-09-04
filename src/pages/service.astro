@@ -2,19 +2,377 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Hello, This is Software Developer.">
-  <main class="m-auot p-6">
+<Layout title="Services - Puneet Sharma Web Developer">
+  <main class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <section class="text-center mb-16">
+        <h1 class="text-5xl sm:text-6xl font-bold text-gray-800 mb-4">
+          <i class="fas fa-briefcase text-purple-600 mr-3"></i>Services
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Professional web development services tailored to your business needs. From custom design to enterprise solutions.
+        </p>
+      </section>
 
-    <div>
-      <div class="py-12 sm:py-16 lg:pt-24">
-        <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
-            <h1 class="text-2xl font-bold sm:text-3xl lg:text-4xl">
-                Website Architecture and Design
-            </h1>
+      <!-- Website Design Packages -->
+      <section class="mb-20">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
+          <i class="fas fa-palette text-indigo-600 mr-3"></i>Website Architecture & Design
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Standard Package */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+            <div class="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Standard</h3>
+              <p class="text-purple-100">Perfect for startups</p>
+            </div>
+            <div class="p-8">
+              <div class="text-4xl font-bold text-gray-800 mb-2">
+                ₹25,000
+              </div>
+              <p class="text-gray-600 text-sm mb-6">One-time investment</p>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">5 Pages Design</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">With XP Tool CMS</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">Responsive Design</span>
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-purple-600 text-white py-2 rounded-lg font-semibold hover:bg-purple-700 transition">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          {/* Pro Package */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 relative">
+            <div class="absolute top-0 right-0 bg-red-500 text-white px-4 py-1 rounded-bl-lg text-sm font-bold">
+              POPULAR
+            </div>
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Pro</h3>
+              <p class="text-purple-100">Best for growing businesses</p>
+            </div>
+            <div class="p-8">
+              <div class="text-4xl font-bold text-gray-800 mb-2">
+                ₹50,000
+              </div>
+              <p class="text-gray-600 text-sm mb-6">One-time investment</p>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">20 Pages Design</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">With XP Tool CMS</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">Advanced Features</span>
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 transition">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          {/* Enterprise Package */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+            <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Enterprise</h3>
+              <p class="text-orange-100">For large organizations</p>
+            </div>
+            <div class="p-8">
+              <div class="text-4xl font-bold text-gray-800 mb-2">
+                Custom
+              </div>
+              <p class="text-gray-600 text-sm mb-6">Contact for pricing</p>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">Unlimited Pages</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">Custom Requests</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span class="text-gray-700">Priority Support</span>
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-orange-600 text-white py-2 rounded-lg font-semibold hover:bg-orange-700 transition">
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- XP Tool CMS -->
+      <section class="mb-20">
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
+          <i class="fas fa-cogs text-purple-600 mr-3"></i>XP Tool CMS - E-Commerce Management
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Standard CMS */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-blue-500 to-cyan-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Standard</h3>
+              <p class="text-blue-100">Small businesses</p>
+            </div>
+            <div class="p-8">
+              <div class="text-3xl font-bold text-gray-800 mb-1">
+                ₹500<span class="text-lg text-gray-600">/month</span>
+              </div>
+              
+              <ul class="space-y-2 text-sm text-gray-700 mb-8 mt-4">
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  ₹1.75L monthly turnover limit
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  10,000 customers/day
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  1 GB storage
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
+                Subscribe
+              </a>
+            </div>
+          </div>
+
+          {/* Pro CMS */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Pro</h3>
+              <p class="text-green-100">Growing businesses</p>
+            </div>
+            <div class="p-8">
+              <div class="text-3xl font-bold text-gray-800 mb-1">
+                ₹1,000<span class="text-lg text-gray-600">/month</span>
+              </div>
+              
+              <ul class="space-y-2 text-sm text-gray-700 mb-8 mt-4">
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  ₹8.5L monthly turnover limit
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  50,000 customers/day
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  10 GB storage
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold hover:bg-green-700 transition">
+                Subscribe
+              </a>
+            </div>
+          </div>
+
+          {/* Enterprise CMS */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-red-500 to-pink-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Enterprise</h3>
+              <p class="text-red-100">Large-scale operations</p>
+            </div>
+            <div class="p-8">
+              <div class="text-3xl font-bold text-gray-800 mb-1">
+                Custom<span class="text-lg text-gray-600">/month</span>
+              </div>
+              
+              <ul class="space-y-2 text-sm text-gray-700 mb-8 mt-4">
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  Unlimited turnover
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  Unlimited capacity
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fas fa-check text-green-500"></i>
+                  24/7 Premium Support
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-red-600 text-white py-2 rounded-lg font-semibold hover:bg-red-700 transition">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5-Year Lock-in Plans -->
+      <section>
+        <h2 class="text-4xl font-bold text-gray-800 text-center mb-12">
+          <i class="fas fa-lock text-yellow-600 mr-3"></i>5-Year Lock-In Plans
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Standard Lock-in */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Standard</h3>
+              <p class="text-amber-100">Includes 1 year free hosting</p>
+            </div>
+            <div class="p-8">
+              <div class="text-3xl font-bold text-gray-800 mb-1">
+                ₹10,000
+              </div>
+              <p class="text-gray-600 text-sm mb-6">5-year agreement</p>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>5 Pages Design</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>1 Year XP Tool Free (Standard)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-info-circle text-blue-500"></i>
+                  <span class="text-sm">12% annual inflation on renewal</span>
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-amber-600 text-white py-2 rounded-lg font-semibold hover:bg-amber-700 transition">
+                Enroll
+              </a>
+            </div>
+          </div>
+
+          {/* Pro Lock-in */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-yellow-500 to-orange-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Pro</h3>
+              <p class="text-yellow-100">Includes 1 year free hosting</p>
+            </div>
+            <div class="p-8">
+              <div class="text-3xl font-bold text-gray-800 mb-1">
+                ₹20,000
+              </div>
+              <p class="text-gray-600 text-sm mb-6">5-year agreement</p>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>20 Pages Design</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>1 Year XP Tool Free (Pro)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-info-circle text-blue-500"></i>
+                  <span class="text-sm">12% annual inflation on renewal</span>
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-yellow-600 text-white py-2 rounded-lg font-semibold hover:bg-yellow-700 transition">
+                Enroll
+              </a>
+            </div>
+          </div>
+
+          {/* Enterprise Lock-in */}
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-4">
+              <h3 class="text-2xl font-bold">Enterprise</h3>
+              <p class="text-orange-100">Premium SLA</p>
+            </div>
+            <div class="p-8">
+              <div class="text-3xl font-bold text-gray-800 mb-1">
+                Custom
+              </div>
+              <p class="text-gray-600 text-sm mb-6">5-year agreement</p>
+              
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Custom requirements</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Premium support & SLA</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <i class="fas fa-check text-green-500"></i>
+                  <span>Unlimited hosting</span>
+                </li>
+              </ul>
+              
+              <a href="mailto:punee@intaxing.in" class="w-full bg-orange-600 text-white py-2 rounded-lg font-semibold hover:bg-orange-700 transition">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terms -->
+        <div class="mt-12 bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
+          <h3 class="text-lg font-bold text-gray-800 mb-3">
+            <i class="fas fa-file-contract text-blue-600 mr-2"></i>Terms & Conditions
+          </h3>
+          <ul class="space-y-2 text-gray-700 text-sm">
+            <li>✓ Payment required in advance</li>
+            <li>✓ Early exit: Pay current project value minus 1-year old version discount</li>
+            <li>✓ Business closure: Source code provided without conditions</li>
+            <li>✓ After 5 years: Source code available; new versions protected</li>
+            <li>✓ Pricing includes 12% annual inflation (rounded to nearest ₹50)</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
       <div class="mx-auto w-full space-y-4 lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0">
         <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
             <div class="bg-white px-6 py-8 sm:p-10 sm:pb-6">

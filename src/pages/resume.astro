@@ -10,483 +10,595 @@ import jquery from "../assets/svg/jquery.svg";
 import apache from "../assets/svg/apache.svg";
 import vuejs from "../assets/svg/vuejs.svg";
 import deno from "../assets/svg/deno.svg";
+import Language from "../components/Language.astro";
 ---
 
 <!DOCTYPE html>
-<html>
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puneet Sharma - AI Engineer & Backend Architect</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+ </head>
+ <body class="overflow-x-hidden bg-gradient-to-br from-slate-50 via-purple-50 to-slate-50">
+  <div class="min-h-screen">
+   <!-- Header Section -->
+   <section class="bg-gradient-to-r from-purple-600 via-purple-500 to-indigo-600 text-white pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+     <!-- Name and Title -->
+     <div class="text-center mb-8">
+      <h1 class="text-5xl sm:text-6xl font-bold mb-2">PUNEET SHARMA</h1>
+      <p class="text-xl sm:text-2xl font-light tracking-wide text-purple-100">
+       AI Engineer (Generative AI) | Backend Architect
+      </p>
+      <p class="text-sm sm:text-base text-purple-200 mt-2">
+       Gurgaon, Haryana / Jaipur, Rajasthan, India
+      </p>
+      <div class="h-1 w-24 bg-white mx-auto mt-4 rounded-full"></div>
+     </div>
 
- <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
- <link
-  rel="stylesheet"
-  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
- />
- <body class="overflow-x-hidden">
-  <section>
-   <div class="head">
-    <br />
-    <h1>PUNEET SHARMA</h1>
-    <h2 class="role">WEB DEVLOPER</h2>
-   </div>
-   <div class="contact">
-    <div class="phone">
-     <a href="tel:+919716464927">
-      <i class="fa fa-phone" aria-hidden="true"></i>
-     </a>
-     +************
-    </div>
-    <div class="email">
-     <a href="mailto:punee@intaxing.in">
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-     </a>
-     punee@intaxing.in
-    </div>
-    <div class="web">
-     <img
-      src="https://www.mozilla.org/media/protocol/img/logos/firefox/browser/logo-lg.3d9087ac44e8.png"
-      width="40px"
-     />
-     <a class="none" href="//puneetxp.github.io"> puneetxp.github.io</a>
-    </div>
-   </div>
-   <div class="objective text-c">
-    <h2>Objective</h2>
-    <h3 class="my-3">Project Should Be Exciting</h3>
-   </div>
-   <div class="experience">
-    <h2 class="exp">Experience</h2>
-    <div class="bad text-c">
-     <small>
-      <strong> Dark Past</strong>I was pursuing for C.A. but leave it as i never
-      like it first place and even when i pursing it then also I creating small
-      website for people in wordpress.
-     </small>
-    </div>
-    <div class="good text-j">
-     <div class="first">
-      <img src={wordpress} alt="Wordpress" width="50px" />
-      Start from WordPress and do some css and use of template somehow and gives
-      good result.
-     </div>
-     <div class="second">
-      <div class="sd">
-       But from 2019 I work on for intaxing.in and don't want to word press
-       anymore, So I build intaxing.in Full Stack Developer without any
-       framework. On Local Linux and Window Servers using HTML JavaScript CSS
-       and Backend with PHP and put in WAN. Also setup a Mail server for same
-       address which also run locally.
-       <br /><br />
-       Now I working on framework which i never want to do but as framework using
-       by the industry I need to adapt.
+     <!-- Contact Information -->
+     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 justify-items-center">
+      <div class="flex items-center gap-3">
+       <i class="fas fa-phone text-2xl"></i>
+       <div>
+        <p class="text-sm text-purple-200">Phone</p>
+        <a href="tel:+919716464927" class="font-semibold hover:text-purple-200 transition">
+         +91 9716464927
+        </a>
+       </div>
       </div>
-      <div class="ima">
-       <img src={coding} alt="Coding" width="50px" />
-       <br /><br />
-       <img src={coding} alt="Coding" width="50px" />
+      <div class="flex items-center gap-3">
+       <i class="fas fa-envelope text-2xl"></i>
+       <div>
+        <p class="text-sm text-purple-200">Email</p>
+        <a href="mailto:puneetsharma9@hotmail.com" class="font-semibold hover:text-purple-200 transition">
+         puneetsharma9@hotmail.com
+        </a>
+       </div>
+      </div>
+      <div class="flex items-center gap-3">
+       <i class="fab fa-github text-2xl"></i>
+       <div>
+        <p class="text-sm text-purple-200">GitHub</p>
+        <a href="https://github.com/puneetxp" class="font-semibold hover:text-purple-200 transition" target="_blank">
+         github.com/puneetxp
+        </a>
+       </div>
       </div>
      </div>
     </div>
+   </section>
+
+   <!-- Main Content -->
+   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <!-- Objective Section -->
+    <section class="mb-12">
+     <div class="bg-white rounded-lg shadow-md p-8 border-l-4 border-purple-600">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+       <i class="fas fa-briefcase text-purple-600"></i>
+       Profile
+      </h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+       Generative AI Engineer with 2+ years of experience designing and deploying multi-agent systems, RAG pipelines, and LLM orchestration (LangChain, LangGraph, AWS Bedrock). Proven expertise in prompt engineering, embedding strategies, model routing, and evaluation pipelines, backed by 7 years of full-stack engineering experience. Focused on building scalable, production-grade AI systems that bridge the gap between complex orchestration and real-world application.
+      </p>
+      <div class="mt-4 pt-4 border-t border-gray-200">
+       <p class="text-gray-600 font-semibold text-sm">
+        <strong>Industry Expertise:</strong> AI & Machine Learning • Event Tech & SaaS • E-commerce Platforms • Full-Stack Architecture
+       </p>
+      </div>
+     </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="mb-12">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+      <i class="fas fa-briefcase text-purple-600"></i>
+      Professional Experience
+     </h2>
+
+     <!-- Dreamcast -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <div class="flex items-start gap-4 mb-6">
+       <div class="flex-1">
+        <h3 class="text-2xl font-bold text-gray-800 mb-1">Software Developer — AI & Backend</h3>
+        <p class="text-gray-600 text-sm font-semibold mb-2">Dreamcast | Oct 2024 — Present</p>
+        <ul class="text-gray-700 leading-relaxed space-y-2 list-disc list-inside">
+         <li>Architected and deployed high-performance web applications using NestJS, Next.js, and Laravel for large-scale event management systems.</li>
+         <li>Designed and integrated AI systems and agents using AWS Bedrock and LangChain to solve complex event-specific use cases.</li>
+         <li>Developed advanced multi-agent RAG workflows and AI chatbots, driving significant enhancements in event search accuracy and attendee self-service.</li>
+         <li>Collaborated on critical system design decisions, including data modeling and API architecture for high-concurrency environments.</li>
+        </ul>
+       </div>
+      </div>
+     </div>
+
+     <!-- Intaxing -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <div class="flex items-start gap-4 mb-6">
+       <div class="flex-1">
+        <h3 class="text-2xl font-bold text-gray-800 mb-1">Full Stack Developer</h3>
+        <p class="text-gray-600 text-sm font-semibold mb-2">Intaxing | Nov 2022 — Apr 2024</p>
+        <p class="text-gray-700 leading-relaxed">
+         Service-based provider delivering web solutions. Developed computation software driven by JSON logic, implemented deadline notification systems, and designed secure client management workflows with end-to-end encryption. Built and maintained custom client websites and integrated job portal features, managing project lifecycles from requirement gathering to deployment.
+        </p>
+       </div>
+      </div>
+     </div>
+
+     <!-- GigtechService -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <div class="flex items-start gap-4 mb-6">
+       <div class="flex-1">
+        <h3 class="text-2xl font-bold text-gray-800 mb-1">Full Stack Developer</h3>
+        <p class="text-gray-600 text-sm font-semibold mb-2">GigtechService | Apr 2020 — Nov 2022</p>
+        <p class="text-gray-700 leading-relaxed">
+         Engineered robust LAMP stack platforms, built booking systems for rental (AC/heating), developed e-commerce applications, and mentored a cohort of web development interns.
+        </p>
+       </div>
+      </div>
+     </div>
+
+     <!-- Freelancer -->
+     <div class="bg-white rounded-lg shadow-md p-8">
+      <div class="flex items-start gap-4 mb-6">
+       <div class="flex-1">
+        <h3 class="text-2xl font-bold text-gray-800 mb-1">Web Developer</h3>
+        <p class="text-gray-600 text-sm font-semibold mb-2">Freelancer | Jul 2019 — Apr 2020</p>
+        <p class="text-gray-700 leading-relaxed">
+         Delivered custom WordPress solutions and responsive business sites for diverse SME clients.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="mb-12">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+      <i class="fas fa-project-diagram text-purple-600"></i>
+      Selected Projects
+     </h2>
+
+     <!-- Event Copilot -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <h3 class="text-2xl font-bold text-gray-800 mb-1">Event Copilot AI Platform (v1–v3)</h3>
+      <p class="text-gray-600 text-sm font-semibold mb-3">Featured at IMC2025, AIImpact 2026, and IEW2026 | Tech: NestJS, Next.js, Gemini, OpenAI, PostgreSQL, Streaming RAG | 2025-2026</p>
+      <ul class="text-gray-700 leading-relaxed space-y-2 list-disc list-inside">
+       <li>Built a Copilot AI platform across three major versions on a NestJS monorepo, using Gemini and OpenAI for event search, conversational assistance, and grounded AI responses across CMS and attendee workflows.</li>
+       <li>Added a Next.js frontend for attendee-facing Copilot experiences, supporting natural-language event interactions, smart recommendations, and UI flows for AI-driven assistance.</li>
+       <li>Integrated profile matching for personalized recommendations, enhancing user relevance and experience.</li>
+       <li>Designed the backend around reusable libraries for auth, database, Redis, sockets, S3, notifications, and configs, enabling a scalable architecture across administrative and user-facing services.</li>
+       <li>Used streaming RAG protocols and prompt-engineering layers to keep responses grounded in event data and suitable for real-time interaction.</li>
+      </ul>
+     </div>
+
+     <!-- Event Database AI Agent -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <h3 class="text-2xl font-bold text-gray-800 mb-1">Event Database AI Agent</h3>
+      <p class="text-gray-600 text-sm font-semibold mb-3">Tech: AWS Lambda, API Gateway, JWT, Claude Bedrock, PostgreSQL, MySQL | 2025-2026</p>
+      <ul class="text-gray-700 leading-relaxed space-y-2 list-disc list-inside">
+       <li>Implemented a secure, serverless Event Database AI Agent using AWS Lambda, API Gateway, and JWT-authenticated requests that translate natural-language questions into safe SQL over PostgreSQL/MySQL event databases.</li>
+       <li>Designed a modular agent runtime with dedicated database tools and a Schema Workflow Manager, backed by a workflow metadata PostgreSQL DB storing frozen schemas, prompt registry, query audit logs, and conversation history.</li>
+       <li>Added strong guardrails and observability: read-only source DB access, automatic LIMIT injection, destructive-SQL blocking, Chart.js-ready outputs, and structured logging for workflow/tool behavior.</li>
+       <li>Built a Dreamcast analytics harness that runs scripted question batches against live event data, compares environments, and produces QA reports on attendance, multi-day visitors, peaks, and schema drift.</li>
+      </ul>
+     </div>
+
+     <!-- Agent Website Creator -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <h3 class="text-2xl font-bold text-gray-800 mb-1">Agent Website Creator</h3>
+      <p class="text-gray-600 text-sm font-semibold mb-3">Tech: Next.js, FastAPI, LangGraph, OpenAI, Gemini, DeepSeek, MCP | 2025-2026</p>
+      <ul class="text-gray-700 leading-relaxed space-y-2 list-disc list-inside">
+       <li>Designed an AI-powered website creator with a Next.js 16 frontend and FastAPI/LangGraph backend that analyzes prompts or uploaded documents and generates working sites through a multi-step pipeline.</li>
+       <li>Built a two-step generation flow: analyze a prompt/doc into a draft PRD, then generate the site by skipping redundant reasoning when the PRD is already filled, saving time and improving reliability.</li>
+       <li>Added pluggable model routing across OpenAI, Gemini, and DeepSeek, letting the system choose the right provider for thinking, planning, content generation, and engine selection.</li>
+       <li>Integrated MCP-based tools like Silex, Stitch, and Playwright, along with document extraction and canonical data processing, to convert PDFs and prompts into production-ready site outputs.</li>
+      </ul>
+     </div>
+
+     <!-- AI Photobooth -->
+     <div class="bg-white rounded-lg shadow-md p-8">
+      <h3 class="text-2xl font-bold text-gray-800 mb-1">AI Photobooth Identity System</h3>
+      <p class="text-gray-600 text-sm font-semibold mb-3">Tech: Buffalo_L (Backend)</p>
+      <p class="text-gray-700 leading-relaxed">
+       Developed photobooth software that utilizes the Buffalo_L framework for the backend side to handle the embedded machine learning model for real-time facial scanning, enabling accurate identification and grouping of photos belonging to the same individual.
+      </p>
+     </div>
+    </section>
+
+    <!-- Portfolio Projects Section (Not Primary Author) -->
+    <section class="mb-12">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+      <i class="fas fa-handshake text-indigo-600"></i>
+      Portfolio & Contributing Projects
+     </h2>
+     <div class="bg-indigo-50 rounded-lg shadow-md p-8 border-l-4 border-indigo-600 mb-6">
+      <p class="text-gray-700 leading-relaxed mb-4">
+       These projects represent significant contributions and portfolio work where I played a key architectural and technical role, though they may not be solely under my name. They demonstrate expertise across diverse domains and technologies.
+      </p>
+      
+      <div class="grid gap-6">
+       <!-- Intaxing -->
+       <div class="bg-white p-6 rounded border-l-4 border-indigo-500">
+        <h4 class="text-xl font-bold text-gray-800 mb-2">Intaxing.in</h4>
+        <p class="text-gray-600 text-sm font-semibold mb-3">Full-Stack Web Platform | Built from scratch with pure HTML, CSS, JavaScript, PHP</p>
+        <ul class="text-gray-700 text-sm space-y-1 list-disc list-inside">
+         <li>Architected complete platform infrastructure from zero, configuring Linux and Windows servers</li>
+         <li>Implemented computation engine driven by JSON logic for complex tax calculations</li>
+         <li>Built mail server infrastructure and deadline notification systems</li>
+         <li>Designed secure client management workflows with end-to-end encryption</li>
+        </ul>
+       </div>
+
+       <!-- Zyvika -->
+       <div class="bg-white p-6 rounded border-l-4 border-indigo-500">
+        <h4 class="text-xl font-bold text-gray-800 mb-2">Zyvika.com (Archived)</h4>
+        <p class="text-gray-600 text-sm font-semibold mb-3">E-commerce Platform | Modern Stack Development</p>
+        <p class="text-gray-700 text-sm">
+         Contributed to a full e-commerce ecosystem with both web and mobile app components, incorporating modern frontend frameworks and scalable backend architecture.
+        </p>
+       </div>
+
+       <!-- EliteOnRent -->
+       <div class="bg-white p-6 rounded border-l-4 border-indigo-500">
+        <h4 class="text-xl font-bold text-gray-800 mb-2">EliteOnRent.com</h4>
+        <p class="text-gray-600 text-sm font-semibold mb-3">Rental Booking Platform | Python/Laravel Stack</p>
+        <ul class="text-gray-700 text-sm space-y-1 list-disc list-inside">
+         <li>Developed booking system for rental services (AC/heating equipment)</li>
+         <li>Built inventory management and pricing optimization algorithms</li>
+         <li>Implemented real-time availability tracking and reservation workflows</li>
+        </ul>
+       </div>
+
+       <!-- iKrent -->
+       <div class="bg-white p-6 rounded border-l-4 border-indigo-500">
+        <h4 class="text-xl font-bold text-gray-800 mb-2">iKrent.com</h4>
+        <p class="text-gray-600 text-sm font-semibold mb-3">Rental Marketplace | E-commerce Platform</p>
+        <p class="text-gray-700 text-sm">
+         Built comprehensive rental marketplace with multi-vendor support, payment integration, and customer lifecycle management systems.
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Core Achievements Section -->
+    <section class="mb-12">
+     <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg shadow-md p-8 border-l-4 border-purple-600">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+       <i class="fas fa-star text-purple-600"></i>
+       Core Achievements
+      </h2>
+      <ul class="text-gray-700 leading-relaxed space-y-3 list-disc list-inside">
+       <li>Delivered over 10 end-to-end products across diverse domains including SaaS and e-commerce.</li>
+       <li>Achieved a 35% reduction in AI operational costs via multi-LLM routing and provider selection.</li>
+       <li>Optimized API performance by up to 40% through advanced query optimization and caching strategies.</li>
+      </ul>
+     </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="mb-12">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+      <i class="fas fa-code text-purple-600"></i>
+      Technical Skills
+     </h2>
+
+     <!-- Languages -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Languages</h3>
+      <div class="flex flex-wrap gap-2">
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">Python</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">TypeScript</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">Go</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">Java</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">Kotlin</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">PHP</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">C#</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">JavaScript</span>
+       <span class="px-3 py-1 text-sm bg-purple-100 text-purple-800 rounded-full font-semibold">SQL</span>
+      </div>
+     </div>
+
+     <!-- AI & LLM Orchestration -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">AI & LLM Orchestration</h3>
+      <div class="flex flex-wrap gap-2">
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">LangGraph</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">LangChain</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">n8n</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">Multi-Agent</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">RAG Pipelines</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">Tool Calling</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">AI Evaluation</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">Prompt Eng</span>
+       <span class="px-3 py-1 text-sm bg-indigo-100 text-indigo-800 rounded-full font-semibold">Memory</span>
+      </div>
+     </div>
+
+     <!-- Backend & Cloud -->
+     <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Backend & Cloud Architecture</h3>
+      <div class="flex flex-wrap gap-2">
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">FastAPI</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">NestJS</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">Laravel</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">SQLAlchemy</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">Microservices</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">Event-Driven</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">PostgreSQL</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">MySQL</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">Redis</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">Apache Kafka</span>
+       <span class="px-3 py-1 text-sm bg-blue-100 text-blue-800 rounded-full font-semibold">Firebase</span>
+      </div>
+     </div>
+
+     <!-- Frontend & DevOps -->
+     <div class="bg-white rounded-lg shadow-md p-8">
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Frontend & DevOps</h3>
+      <div class="flex flex-wrap gap-2">
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">Next.js</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">React</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">Vue.js</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">Tailwind</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">Kubernetes</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">Docker</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">CI/CD</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">GitHub Actions</span>
+       <span class="px-3 py-1 text-sm bg-green-100 text-green-800 rounded-full font-semibold">Nginx</span>
+      </div>
+      <p class="text-gray-700 mt-4 text-sm">
+       <strong>Specializations:</strong> API-First Design • ETL Pipelines • Model Routing • Vector Search • Scalable System Design
+      </p>
+     </div>
+
+     <!-- Visual Tech Stack Component -->
+     <div class="mt-8 bg-white rounded-lg shadow-md p-8">
+      <Language />
+     </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="mb-12">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+      <i class="fas fa-graduation-cap text-purple-600"></i>
+      Education
+     </h2>
+
+     <div class="bg-white rounded-lg shadow-md p-8">
+      <div class="flex items-start gap-4">
+       <div class="flex-1">
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">Bachelor of Commerce (B.Com)</h3>
+        <p class="text-gray-600 text-sm font-semibold mb-2">School of Open Learning, Delhi University</p>
+        <p class="text-gray-700">
+         <strong>Completed:</strong> November 2016
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="mb-12">
+     <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+      <i class="fas fa-certificate text-purple-600"></i>
+      Certifications
+     </h2>
+
+     <div class="space-y-4">
+      <div class="bg-white rounded-lg shadow-md p-8">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Google Cloud Skill Badge: Google Cloud Computing Foundations</h3>
+       <p class="text-gray-600 text-sm">
+        <a href="https://www.skills.google/public_profiles/d4cc3323-8350-435b-9872-fef49b49c3cb/badges/25970007" target="_blank" class="text-purple-600 hover:text-purple-800 underline">
+         View Badge
+        </a>
+       </p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-8">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Google Cloud Skill Badge: Data, ML, and AI in Google Cloud</h3>
+       <p class="text-gray-600 text-sm">
+        <a href="https://www.skills.google/public_profiles/d4cc3323-8350-435b-9872-fef49b49c3cb/badges/25190370" target="_blank" class="text-purple-600 hover:text-purple-800 underline">
+         View Badge
+        </a>
+       </p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-8">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Google Cloud Skill Badge: Generative AI Fundamentals</h3>
+       <p class="text-gray-600 text-sm">
+        <a href="https://www.skills.google/public_profiles/d4cc3323-8350-435b-9872-fef49b49c3cb/badges/17356908" target="_blank" class="text-purple-600 hover:text-purple-800 underline">
+         View Badge
+        </a>
+       </p>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-8">
+       <h3 class="text-xl font-bold text-gray-800 mb-2">Microsoft Certification: AB-100 (In Progress)</h3>
+       <p class="text-gray-600 text-sm">
+        <a href="https://aka.ms/AB100-StudyGuide" target="_blank" class="text-purple-600 hover:text-purple-800 underline">
+         Study Guide
+        </a>
+       </p>
+      </div>
+     </div>
+    </section>
+
+    <!-- Aspiration Section -->
+    <section class="mb-12">
+     <div class="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg shadow-md p-8 border-l-4 border-purple-600">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+       <i class="fas fa-rocket text-purple-600"></i>
+       Career Goals
+      </h2>
+      <div class="space-y-4 text-gray-700 leading-relaxed">
+       <p>
+        <strong>Commitment to Growth:</strong> Dedicated to remaining relevant in the rapidly evolving tech industry. 
+        Embracing new technologies from Full Stack development to AI and Machine Learning.
+       </p>
+       <p>
+        <strong>Seeking Opportunities:</strong> Looking for positions with industry-leading companies working with 
+        cutting-edge technologies. Open to exploring emerging technologies and methodologies.
+       </p>
+       <p class="font-semibold text-purple-700">
+        Goal: Create meaningful solutions that make a real impact while continuously expanding technical expertise.
+       </p>
+      </div>
+     </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="mb-12">
+     <div class="bg-white rounded-lg shadow-md p-8 border-l-4 border-indigo-600">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4 flex items-center gap-3">
+       <i class="fas fa-user text-indigo-600"></i>
+       About Me
+      </h2>
+      <p class="text-gray-700 leading-relaxed text-lg">
+       A passionate developer whose journey led to coding through persistence and genuine interest. 
+       While alternative career paths existed, I discovered my true calling in web development. 
+       I believe in continuous learning, embracing challenges, and building solutions that matter. 
+       Through hands-on experience with diverse technologies and platforms, I've developed a strong foundation 
+       for tackling complex development challenges and adapting to the ever-changing tech landscape.
+      </p>
+     </div>
+    </section>
    </div>
-   <div class="skill">
-    <h2>Experience</h2>
-    <div class="langc">
-     <h3 class="gap-2">
-      <img src={js} alt="JS" width="50px" />
-      <img src={html5} alt="HTML5" width="50px" />
-      <img src={css} alt="CSS" width="50px" />
-      <img src={php} alt="PHP" width="50px" />
-      <img src={deno} alt="DENO" width="50px" />
-      <img
-       src="https://laravel.com/img/logomark.min.svg"
-       alt="Laravel"
-       width="50px"
-      />
-      <img src={mysql} alt="MYSQL" width="50px" />
-      <img src={jquery} alt="JQUERY" width="50px" />
-      <img src={apache} alt="APACHE" width="50px" />
-      <img src={vuejs} alt="vuejs" width="50px" />
-      <img
-       src="https://www.solidjs.com/assets/logo-123b04bc.svg"
-       alt="solidjs"
-       width="50px"
-      />
-      <img src="https://angular.io/assets/images/logos/angular/angular.svg" />
-      Ajax & Mail Servers
+
+   <!-- Social Links -->
+   <section class="bg-white border-t border-purple-200 py-8 px-4">
+    <div class="max-w-4xl mx-auto">
+     <h3 class="text-center text-xl font-bold text-gray-800 mb-6">
+      <i class="fas fa-share-alt text-purple-600 mr-2"></i>Connect With Me
      </h3>
+     <div class="flex justify-center gap-8 flex-wrap">
+      <a
+       href="https://twitter.com/Puneetsharmakau"
+       class="flex flex-col items-center gap-2 text-gray-700 hover:text-purple-600 transition"
+       target="_blank"
+      >
+       <i class="fab fa-twitter text-3xl"></i>
+       <span class="text-sm font-semibold">Twitter</span>
+      </a>
+      <a
+       href="https://codepen.io/puneetxp"
+       class="flex flex-col items-center gap-2 text-gray-700 hover:text-purple-600 transition"
+       target="_blank"
+      >
+       <i class="fab fa-codepen text-3xl"></i>
+       <span class="text-sm font-semibold">CodePen</span>
+      </a>
+      <a
+       href="https://stackoverflow.com/users/7609791/puneet-sharma"
+       class="flex flex-col items-center gap-2 text-gray-700 hover:text-purple-600 transition"
+       target="_blank"
+      >
+       <i class="fab fa-stack-overflow text-3xl"></i>
+       <span class="text-sm font-semibold">Stack Overflow</span>
+      </a>
+     </div>
     </div>
-    <div class="Software"></div>
-   </div>
-   <div class="not-o pad">
-    <h2>Desire To be Remain Relevant</h2>
-    <div class="text-j">
-     I have want more and more with new things which regularly happening in
-     Coding industry I think it is possible to have a good experience where new
-     possibility appear any time. Full stack to A.I. as tide turn you have to
-     adopt for new possibility.<br />
-     Right Now I am looking for a chance in work with industry level tech. But to
-     be fair personal financial position also an important part of my life decision
-     that lacking and I need.
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-gradient-to-r from-gray-900 to-neutral-900 text-white py-8 px-4 mt-12">
+    <div class="max-w-4xl mx-auto">
+     <div class="grid sm:grid-cols-2 gap-6 mb-6">
+      <div class="flex items-center gap-3">
+       <i class="fas fa-copyright text-lg"></i>
+       <span class="text-sm">© 2024-2026 Puneet Sharma. All rights reserved.</span>
+      </div>
+      <div class="text-sm text-right sm:text-right text-left">
+       <p class="text-gray-400">AI Engineer | Backend Architect | Full Stack Developer</p>
+      </div>
+     </div>
+     <div class="border-t border-gray-700 pt-6 flex justify-between items-center flex-wrap gap-4">
+      <div class="text-sm text-gray-400">
+       <p>Last Updated: September 2026</p>
+      </div>
+      <a href="/" class="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition">
+       <span>Back to Home</span>
+       <i class="fas fa-arrow-right"></i>
+      </a>
+     </div>
     </div>
-   </div>
-   <div class="about">
-    <h2>About</h2>
-    <div class="">
-     <h4 style="text-align:justify">
-      A Developer which is never should developer may be there are some
-      alternative to his career but life show me path to coding. Also I think
-      that will earn more of my skills.
-     </h4>
-    </div>
-   </div>
-  </section>
-  <div class="footer w-full">
-   <div class="social_media">
-    <a href="https://twitter.com/Puneetsharmakau">
-     <svg viewBox="0 0 24 24" class="r-jwli3a">
-      <g>
-       <path
-        d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"
-       ></path>
-      </g>
-     </svg>
-    </a>
-    <a href="https://codepen.io/puneetxp">
-     <img
-      class="r-jwli3a codepen"
-      src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"
-     />
-    </a>
-    <a href="https://stackoverflow.com/users/7609791/puneet-sharma">
-     <svg
-      class="r-jwli3a stackover"
-      width="50"
-      height="54"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-     >
-      <path d="M26 41v-9h4v13H0V32h4v9h22z" fill="#BCBBBB"></path>
-      <path
-       d="M23 34l.8-3-16.1-3.3L7 31l16 3zM9.2 23.2l15 7 1.4-3-15-7-1.4 3zm4.2-7.4L26 26.4l2.1-2.5-12.7-10.6-2.1 2.5zM21.5 8l-2.7 2 9.9 13.3 2.7-2L21.5 8zM7 38h16v-3H7v3z"
-       fill="#F48024"></path>
-     </svg>
-    </a>
-   </div>
+   </footer>
   </div>
-  <div
-   class="bg-gradient-to-b  from-neutral-700 to-neutral-900 text-white text-lg font-semibold py-1 w-full"
-  >
-   <a href="/" class="px-2 flex gap-2">
-    <span class="h-auto my-auto">Return to Website</span>
-    <svg
-     fill="#000000"
-     width="40px"
-     height="40px"
-     viewBox="0 0 256 256"
-     id="Flat"
-     xmlns="http://www.w3.org/2000/svg"
-    >
-     <g opacity="0.2">
-      <path
-       d="M61.66958,204.116,16,128l45.66958-76.116a8,8,0,0,1,6.85994-3.884H216a8,8,0,0,1,8,8V200a8,8,0,0,1-8,8H68.52952A8,8,0,0,1,61.66958,204.116Z"
-      ></path>
-     </g>
-     <g>
-      <path
-       d="M216,39.99963H68.5293a16.0796,16.0796,0,0,0-13.71973,7.76856L9.13965,123.88342a8.00334,8.00334,0,0,0,0,8.23242L54.80859,208.2301a16.08,16.08,0,0,0,13.72071,7.76953H216a16.01833,16.01833,0,0,0,16-16v-144A16.01833,16.01833,0,0,0,216,39.99963ZM61.66992,204.11584l6.85938-4.11621.00195.00293ZM216,199.99963H68.53027l-43.20117-72,43.2002-72H216Z"
-      ></path>
-      <path
-       d="M106.34277,157.65686a8.00181,8.00181,0,0,0,11.31446,0L136,139.31409l18.34277,18.34277a8.00053,8.00053,0,1,0,11.31446-11.31445l-18.34278-18.34278,18.34278-18.34277a8.00053,8.00053,0,0,0-11.31446-11.31445L136,116.68518,117.65723,98.34241a8.00053,8.00053,0,0,0-11.31446,11.31445l18.34278,18.34277-18.34278,18.34278A8.00121,8.00121,0,0,0,106.34277,157.65686Z"
-      ></path>
-     </g>
-    </svg>
-   </a>
-  </div>
-  <style>
-   html {
-    font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
-   }
-   body {
-    font-size: 1.3rem;
-    line-height: 1.27;
-    margin: auto;
-    font-family: lato, sans-serif;
-   }
-   /*section {
-  max-width: 1920px;
-  margin: auto;
-}
-*/
-   h1 {
-    font-size: 2.5rem;
-   }
-   h2 {
-    font-size: 2rem;
-   }
-
-   h1,
-   h2,
-   .objective {
-    margin-right: auto;
-    text-align: center;
-   }
-   .first,
-   .second {
-    display: flex;
-    //flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: justify;
-    align-items: center;
-    padding: 10px 0;
-   }
-   section {
-    padding: 0 0;
-   }
-   .contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    text-transform: capitalize;
-    align-self: center;
-   }
-   .contact .phone,
-   .contact .email,
-   .contact .web {
-    margin: 10px 0px;
-   }
-   .ima img {
-    margin: 0 12px;
-   }
-   a.none {
-    text-decoration: none;
-    color: initial;
-   }
-   .pad {
-    padding: 0 10px;
-   }
-   .experience .good {
-    padding: 0 10px;
-   }
-   .experience .bad {
-    background: #00b7ff00;
-    padding: 0px 10px;
-    margin-bottom: 0px;
-    font-size: 0.79rem;
-    color: #00b7ff00;
-   }
-   .experience .bad:hover {
-    transition: background 500ms ease-in;
-    background: white;
-   }
-
-   .experience .first img {
-    margin: 10px;
-   }
-   .skill h3 {
-    text-align: center;
-   }
-   h2.exp {
-    margin-bottom: 10px;
-   }
-   h2.role {
-    margin-bottom: 8px;
-   }
-   .text-j {
-    text-align: justify;
-   }
-   .text-c {
-    text-align: center;
-   }
-   h3 img {
-    width: 95px;
-   }
-   .langc h3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #dadaff;
-    padding: 20px;
-   }
-   .skill {
-    padding: 15px 0;
-    background: #e9ffe9;
-   }
-   .experience {
-    background: #b2e9ff;
-    color: #6a6a6a;
-    padding: 15px 0;
-   }
-   .objective {
-    background: #728272;
-    color: #f2e4e4;
-    background: #8bdb8b;
-    color: #192b168f;
-    background: #8bdb8b;
-    color: #073a35c4;
-    padding: 15px 0;
-   }
-   .objective h3 {
-    padding: 0px 20px;
-   }
-   .phone .fa,
-   .email .fa {
-    font-size: 40px;
-   }
-   .web,
-   .phone,
-   .email {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-   }
-   .about {
-    background: aqua;
-    color: #664edbc2;
-    background: aqua;
-    color: #032f3a91;
-    padding: 10px;
-    background: aqua;
-    color: #00000091;
-   }
-   .not-o {
-    margin: 20px 0;
-   }
-   @supports (display: grid) {
-    @media screen and (min-width: 800px) {
-     section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto;
-      grid-template-areas:
-       "head objective"
-       "contact objective"
-       "experience skill"
-       "desire skill"
-       "desire about"
-       "footer footer";
-     }
-     .footer {
-      grid-area: footer;
-     }
-     h3 img {
-      width: 135px;
-     }
-     .objective {
-      grid-area: objective;
-      margin: 1.5%;
-      padding: 0 0;
-     }
-     .contact {
-      grid-area: contact;
-      margin: 1%;
-     }
-
-     .head {
-      grid-area: head;
-      margin: 1%;
-     }
-
-     .experience {
-      grid-area: experience;
-      margin: 1%;
-      padding: 0 0;
-     }
-
-     //.s { grid-area: footer;}
-     .skill {
-      margin: 1%;
-      grid-area: skill;
-     }
-     .not-o {
-      margin: 1%;
-      grid-area: desire;
-     }
-     .about {
-      margin: 1%;
-      grid-area: about;
-     }
-    }
-
-    @media screen and (min-width: 1200px) {
-     section {
-      grid-template-columns: 2fr 0.5fr 0.5fr 1fr;
-      grid-template-areas:
-       "skill skill skill head"
-       "skill  skill  skill contact"
-       "experience experience objective objective"
-       "desire desire desire about"
-       "footer footer footer footer";
-     }
-     .ima img {
-      margin: 0 22px;
-     }
-    }
-   }
-   @media screen and (min-width: 1980px) {
-    section {
-     grid-template-columns: 2fr 0.5fr 0.5fr 1fr;
-     grid-template-areas:
-      "skill skill skill head"
-      "skill  skill  skill contact"
-      "experience experience objective objective"
-      "desire desire desire about"
-      "footer footer footer footer";
-    }
-    .ima img {
-     margin: 0 22px;
-    }
-    h3 img {
-     width: 226px;
-    }
-    body {
-     font-size: 2rem;
-    }
-    h1 {
-     font-size: 3rem;
-    }
-    h2 {
-     font-size: 2.5rem;
-    }
-   }
-
-   .r-jwli3a {
-    width: 40px;
-    background: #81a4aa;
-    margin: 20px;
-    border-radius: 10%;
-   }
-   .r-jwli3a:hover {
-    transition: all 200ms ease-out;
-    transform: rotate(15deg);
-    border-radius: 20%;
-   }
-   .codepen {
-    background: #919191;
-   }
-   .stackover:hover {
-    transform: scale(0.74) rotate(20deg);
-   }
-   .stackover {
-    position: relative;
-    background: #dbdbdb;
-    transform: scale(0.74);
-   }
-   .social_media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #343a40;
-    flex-direction: column;
-    color: #ffffffab;
-   }
-  </style>
  </body>
 </html>
+
+<style>
+ body {
+  background: linear-gradient(135deg, #f5f3ff 0%, #f6f6f6 100%);
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+ }
+
+ section {
+  animation: fadeInUp 0.6s ease-out;
+ }
+
+ @keyframes fadeInUp {
+  from {
+   opacity: 0;
+   transform: translateY(20px);
+  }
+  to {
+   opacity: 1;
+   transform: translateY(0);
+  }
+ }
+
+ a {
+  color: #7c3aed;
+  text-decoration: none;
+  transition: color 0.2s ease;
+ }
+
+ a:hover {
+  color: #6d28d9;
+ }
+
+ details summary {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+ }
+
+ details summary:hover {
+  opacity: 0.8;
+ }
+
+ details[open] summary {
+  color: #7c3aed;
+ }
+
+ @media (max-width: 640px) {
+  h1 {
+   font-size: 2rem !important;
+  }
+  h2 {
+   font-size: 1.5rem !important;
+  }
+  h3 {
+   font-size: 1.25rem !important;
+  }
+  .grid {
+   grid-template-columns: 1fr !important;
+  }
+  .px-3 {
+   padding-left: 0.5rem !important;
+   padding-right: 0.5rem !important;
+  }
+ }
+</style>

@@ -16,40 +16,60 @@ const { href , target = ""} = Astro.props;
 	.link-card {
 		list-style: none;
 		display: flex;
-		padding: 0.15rem;
-		background-color: white;
-		background-image: var(--accent-gradient);
+		padding: 0.25rem;
+		background: linear-gradient(135deg, #7c3aed 0%, #da62c4 50%, rgba(255,255,255,0.1) 100%);
 		background-size: 400%;
-		border-radius: 0.5rem;
+		border-radius: 0.75rem;
 		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+	}
+
+	.link-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
 	}
 
 	.link-card > a {
 		width: 100%;
 		text-decoration: none;
-		line-height: 1.4;
-		padding: 1rem 1.3rem;
-		border-radius: 0.35rem;
-		color: #111;
-		background-color: white;
-		opacity: 0.8;
+		line-height: 1.6;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		color: #1f2937;
+		background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+		opacity: 0.95;
+		transition: all 0.3s ease;
 	}
+
+	.link-card:hover > a {
+		opacity: 1;
+		background: linear-gradient(135deg, #f8f7ff 0%, #ffffff 100%);
+	}
+
 	h2 {
 		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		font-size: 1.5rem;
+		transition: color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+		font-weight: 700;
 	}
+
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
-		color: #444;
+		color: #4b5563;
+		font-weight: 500;
 	}
-	.link-card:is(:hover, :focus-within) {
+
+	.link-card:hover h2 {
+		color: #7c3aed;
+	}
+
+	.link-card:is(:focus-within) {
 		background-position: 0;
 	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent));
+
+	.link-card:is(:focus-within) h2 {
+		color: #7c3aed;
 	}
 </style>

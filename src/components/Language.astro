@@ -47,53 +47,76 @@ const setof = {
       name: "astro",
       src: "https://astro.build/assets/press/astro-icon-dark.svg",
     },
-    {
-      name: "tailwind",
-      src: tailwind,
-    },
-    {
-      name: "bootstrap",
-      src: bootstrap,
-    },
-    {
-      name: "android",
-      src: android,
-    }
-  ],
-  software: [
+    { name: "tailwind", src: tailwind },
+    { name: "bootstrap", src: bootstrap },
     { name: "nginx", src: nginx },
-    { name: "apache", src: apache },
     {
-      name: "hmail",
-      src: "https://www.hmailserver.com/images/top_picture.png",
+      name: "langchain",
+      src: "https://cdn.jsdelivr.net/gh/langchain-ai/langchain@master/docs/static/svg/logo.svg",
+    },
+    {
+      name: "langgraph",
+      src: "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/static/img/logo.svg",
+    },
+    {
+      name: "n8n",
+      src: "https://cdn.jsdelivr.net/gh/n8n-io/n8n@master/packages/cli/commands/openapi/github-assets/n8n-logo.svg",
     },
   ],
 };
 ---
 
-{
-  Object.entries(setof).map(([key, item]) => (
-    <section class="bg-white py-4 my-4">
-      <h2 class="text-3xl font-bold uppercase text-center my-5">{key}</h2>
-      <div class="skill flex flex-wrap justify-center gap-2">
-        {item.map((element) => (
-          <img src={element.src} alt={element.name} />
-        ))}
-      </div>
-    </section>
-  ))
-}
+<div class="w-full">
+  <!-- Languages Section -->
+  <div class="mb-12">
+    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+      <i class="fas fa-code mr-2 text-purple-600"></i>Languages
+    </h3>
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 justify-items-center bg-white rounded-lg shadow-md p-8">
+      {setof.language.map((lang) => (
+        <div class="flex flex-col items-center group cursor-pointer">
+          <div class="relative">
+            <img src={lang.src} alt={lang.name} class="w-16 h-16 transition transform group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full opacity-0 group-hover:opacity-10 transition"></div>
+          </div>
+          <p class="text-sm font-semibold text-gray-700 mt-2 capitalize text-center">{lang.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- Frameworks Section -->
+  <div>
+    <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+      <i class="fas fa-cube mr-2 text-indigo-600"></i>Frameworks & Tools
+    </h3>
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 justify-items-center bg-white rounded-lg shadow-md p-8">
+      {setof.frameworks.map((framework) => (
+        <div class="flex flex-col items-center group cursor-pointer">
+          <div class="relative">
+            <img src={framework.src} alt={framework.name} class="w-16 h-16 transition transform group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full opacity-0 group-hover:opacity-10 transition"></div>
+          </div>
+          <p class="text-sm font-semibold text-gray-700 mt-2 capitalize text-center">{framework.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
 <style>
-  .skill > img,
-  .skill > span {
-    height: 50px;
-    padding: 5px;
-    margin: auto;
+  div {
+    animation: fadeInUp 0.8s ease-out;
   }
-  .skill > img:hover,
-  .skill > span:hover {
-    transition: all 200ms ease-out;
-    transform: rotate(15deg);
-    border-radius: 20%;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 </style>

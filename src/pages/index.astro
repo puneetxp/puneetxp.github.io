@@ -6,58 +6,253 @@ import Network from "../components/Network.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Hello, This is Software Developer.">
-  <main>
-    <h1 class="">
-      Hello, This is <span class="text-gradient">PuneetXP</span>
-    </h1>
-    <Network/>
-    <Language />
-    <Web path="/screenshots/live/*" />
-		<Footer />
+<Layout title="Puneet Sharma - AI Engineer & Backend Architect">
+  <main class="min-h-screen flex flex-col">
+    <!-- Hero Section -->
+    <section class="pt-20 pb-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.32em] text-violet-600">
+          AI Engineer (Generative AI) | Backend Architect
+        </p>
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+          Hello, I'm 
+          <span class="text-gradient bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent">
+            Puneet Sharma
+          </span>
+        </h1>
+        <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          I design scalable AI systems, agent workflows, and backend architecture that turn complex ideas into working products.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/resume" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105">
+            View Resume
+          </a>
+          <a href="#projects" class="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
+            See My Work
+          </a>
+        </div>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-3 text-sm text-slate-700">
+          <span class="rounded-full border border-slate-200 bg-white px-4 py-2 shadow-sm">Gurgaon, Haryana / Jaipur, Rajasthan</span>
+          <span class="rounded-full border border-slate-200 bg-white px-4 py-2 shadow-sm">puneetsharma9@hotmail.com</span>
+          <span class="rounded-full border border-slate-200 bg-white px-4 py-2 shadow-sm">+91 9716464927</span>
+          <a href="https://github.com/puneetxp" target="_blank" class="rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-violet-700 shadow-sm hover:bg-violet-100">github.com/puneetxp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="rounded-[2rem] border border-violet-100 bg-white/80 p-6 shadow-[0_20px_60px_rgba(79,70,229,0.08)] backdrop-blur-sm sm:p-8 lg:p-10">
+          <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+            <div>
+              <p class="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-violet-600">Profile</p>
+              <h2 class="mb-4 text-3xl font-bold text-slate-900">Generative AI Engineer with a product mindset</h2>
+              <p class="text-lg leading-relaxed text-slate-700">
+                I bring 2+ years of experience designing and deploying multi-agent systems, RAG pipelines, and LLM orchestration with LangChain, LangGraph, and AWS Bedrock. Backed by 7 years of full-stack engineering, I build scalable AI systems that connect orchestration, performance, and business impact.
+              </p>
+
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="rounded-full bg-violet-50 px-3 py-1.5 text-sm font-medium text-violet-700">AI & ML</span>
+                <span class="rounded-full bg-violet-50 px-3 py-1.5 text-sm font-medium text-violet-700">RAG Pipelines</span>
+                <span class="rounded-full bg-violet-50 px-3 py-1.5 text-sm font-medium text-violet-700">LLM Orchestration</span>
+                <span class="rounded-full bg-violet-50 px-3 py-1.5 text-sm font-medium text-violet-700">Event Tech & SaaS</span>
+                <span class="rounded-full bg-violet-50 px-3 py-1.5 text-sm font-medium text-violet-700">Full-Stack Architecture</span>
+              </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              <div class="rounded-2xl border border-violet-100 bg-gradient-to-br from-violet-50 to-indigo-50 p-5">
+                <div class="text-3xl font-black text-violet-700">2+</div>
+                <div class="mt-1 text-sm font-medium text-slate-700">Years in GenAI</div>
+              </div>
+              <div class="rounded-2xl border border-violet-100 bg-gradient-to-br from-emerald-50 to-teal-50 p-5">
+                <div class="text-3xl font-black text-emerald-700">7+</div>
+                <div class="mt-1 text-sm font-medium text-slate-700">Years in software</div>
+              </div>
+              <div class="rounded-2xl border border-violet-100 bg-gradient-to-br from-amber-50 to-orange-50 p-5">
+                <div class="text-3xl font-black text-amber-700">35%</div>
+                <div class="mt-1 text-sm font-medium text-slate-700">Lower AI cost</div>
+              </div>
+              <div class="rounded-2xl border border-violet-100 bg-gradient-to-br from-rose-50 to-pink-50 p-5">
+                <div class="text-3xl font-black text-rose-700">10+</div>
+                <div class="mt-1 text-sm font-medium text-slate-700">End-to-end product builds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white/50">
+      <div class="max-w-6xl mx-auto">
+        <div class="mb-8 text-center">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-violet-600">Selected work</p>
+          <h2 class="mt-3 text-3xl font-bold text-slate-900">AI products and systems I’ve built</h2>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl border border-violet-100 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.04)]">
+            <div class="mb-4 inline-flex rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-violet-700">2025–2026</div>
+            <h3 class="mb-3 text-xl font-bold text-slate-900">Event Copilot AI Platform</h3>
+            <p class="text-sm leading-relaxed text-slate-700">
+              Built multi-version Copilot experiences on NestJS and Next.js for event search, conversational assistance, recommendations, and grounded responses across attendee workflows.
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-violet-100 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.04)]">
+            <div class="mb-4 inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700">2025–2026</div>
+            <h3 class="mb-3 text-xl font-bold text-slate-900">Event Database AI Agent</h3>
+            <p class="text-sm leading-relaxed text-slate-700">
+              Created a secure serverless AI agent that turns natural-language questions into safe SQL with guardrails, observability, and chart-ready analytics for event data.
+            </p>
+          </article>
+
+          <article class="rounded-3xl border border-violet-100 bg-white p-6 shadow-[0_18px_40px_rgba(15,23,42,0.04)]">
+            <div class="mb-4 inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-amber-700">2025–2026</div>
+            <h3 class="mb-3 text-xl font-bold text-slate-900">Agent Website Creator</h3>
+            <p class="text-sm leading-relaxed text-slate-700">
+              Designed an AI website builder using Next.js, FastAPI, LangGraph, and multiple providers to turn prompts and documents into production-ready websites.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Networks Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white/50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Connect With Me</h2>
+        <Network/>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Tech Stack</h2>
+        <Language />
+      </div>
+    </section>
+
+    <!-- Full Resume CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-violet-50 via-indigo-50 to-purple-50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          Complete Professional Profile
+        </h2>
+        <p class="text-lg text-slate-700 mb-6 max-w-2xl mx-auto leading-relaxed">
+          Explore my detailed resume with comprehensive information about my professional experience, selected projects, educational background, certifications, and full technical expertise.
+        </p>
+        
+        <div class="grid gap-6 sm:grid-cols-3 mb-8">
+          <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-violet-600">
+            <div class="text-3xl font-bold text-violet-600 mb-2">4</div>
+            <p class="text-gray-700 font-semibold">Major Projects</p>
+            <p class="text-sm text-gray-600 mt-1">Detailed case studies & tech stack</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-indigo-600">
+            <div class="text-3xl font-bold text-indigo-600 mb-2">4</div>
+            <p class="text-gray-700 font-semibold">Work Experiences</p>
+            <p class="text-sm text-gray-600 mt-1">Career journey & achievements</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 shadow-md border-l-4 border-purple-600">
+            <div class="text-3xl font-bold text-purple-600 mb-2">∞</div>
+            <p class="text-gray-700 font-semibold">Skills & Tools</p>
+            <p class="text-sm text-gray-600 mt-1">Full tech expertise on display</p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="/resume" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-10 py-4 rounded-lg font-semibold hover:shadow-lg transition transform hover:scale-105 inline-flex items-center gap-2">
+            <i class="fas fa-file-pdf"></i>
+            View Full Resume
+          </a>
+          <a href="/resume#education" class="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-purple-50 transition inline-flex items-center gap-2">
+            <i class="fas fa-graduation-cap"></i>
+            Education & Certs
+          </a>
+        </div>
+
+        <p class="text-sm text-gray-600 mt-6">
+          <i class="fas fa-info-circle mr-2 text-violet-600"></i>
+          Complete professional information, certifications, and downloadable resources available on the resume page.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 bg-white/50" id="projects">
+      <div class="max-w-6xl mx-auto">
+        <Web path="/screenshots/live/*" />
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 mt-auto">
+      <Footer />
+    </section>
   </main>
 </Layout>
 
 <style>
   main {
-    margin: auto;
-    padding: 1.5rem;
+    margin: 0 auto;
+    padding: 0;
   }
+  
   h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
+    letter-spacing: -0.02em;
   }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
     background-position: 0%;
+    animation: slideGradient 3s ease infinite;
   }
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
+
+  @keyframes slideGradient {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100%;
+    }
+    100% {
+      background-position: 0%;
+    }
   }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent));
-  }
+
   .link-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
     gap: 1rem;
     padding: 0;
+  }
+
+  section {
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 </style>
