@@ -36,8 +36,8 @@ jobs:
         run: npm ci
 
       - name: Install Playwright
-        run: npx playwright install --with-deps chromium
-
+        run: npx playwright install chromium
+        
       - name: Build Astro
         run: npm run build
 
